@@ -6,19 +6,17 @@
 
 <div>
 
-    <p>@pos.Latitude</p>
-    <p>@pos.Longitude</p>
+    <p>@location.Latitude</p>
+    <p>@location.Longitude</p>
 
 </div>
 
 @code {
     private ISSLocation location = new ISSLocation();
-    private ISSLocationPosition pos = new ISSLocationPosition();
 
     protected override async Task OnInitializedAsync()
     {
         var httpClient = _clientFactory.CreateClient("ISSLocation");
         location = await httpClient.GetFromJsonAsync<ISSLocation>("");
-        pos = location.Iss_Position;
     }
 }

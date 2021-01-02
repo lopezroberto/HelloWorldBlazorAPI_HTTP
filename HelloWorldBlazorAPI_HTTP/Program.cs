@@ -21,7 +21,7 @@ namespace HelloWorldBlazorAPI_HTTP
 
 
             builder.Services.AddHttpClient("ISSLocation", client => {
-                client.BaseAddress = new Uri("http://api.open-notify.org/iss-now");
+                client.BaseAddress = new Uri("https://api.wheretheiss.at/v1/satellites/25544");
             });
 
 
