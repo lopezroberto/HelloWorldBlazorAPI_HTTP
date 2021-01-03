@@ -22,7 +22,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        GetLocation();
+        await Task.Run(() =>
+        {
+            GetLocation();
+        });
     }
 
     private async void GetLocation()
