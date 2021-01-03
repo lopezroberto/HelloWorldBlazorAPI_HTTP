@@ -6,17 +6,31 @@
 
 <div>
 
-    <p>@location.Latitude</p>
-    <p>@location.Longitude</p>
+    <p>Latitude = @location.Latitude</p>
+    <p>Longitude = @location.Longitude</p>
+    <p>Altitude = @location.Altitude</p>
+    <p>Visibility = @location.Visibility</p>
+    <p>Velocity = @location.Velocity</p>
+    <p>Units = @location.Units</p>
+
+    <button class="btn btn-primary" @onclick="GetLocation">Click me</button>
 
 </div>
 
 @code {
     private ISSLocation location = new ISSLocation();
 
-    protected override async Task OnInitializedAsync()
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    var httpClient = _clientFactory.CreateClient("ISSLocation");
+    //    location = await httpClient.GetFromJsonAsync<ISSLocation>("");
+    //}
+
+    private async void GetLocation()
     {
         var httpClient = _clientFactory.CreateClient("ISSLocation");
+
         location = await httpClient.GetFromJsonAsync<ISSLocation>("");
     }
+
 }
