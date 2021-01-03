@@ -20,17 +20,16 @@
 @code {
     private ISSLocation location = new ISSLocation();
 
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    var httpClient = _clientFactory.CreateClient("ISSLocation");
-    //    location = await httpClient.GetFromJsonAsync<ISSLocation>("");
-    //}
+    protected override async Task OnInitializedAsync()
+    {
+        GetLocation();
+    }
 
     private async void GetLocation()
     {
         var httpClient = _clientFactory.CreateClient("ISSLocation");
-
         location = await httpClient.GetFromJsonAsync<ISSLocation>("");
+        StateHasChanged();
     }
 
 }
