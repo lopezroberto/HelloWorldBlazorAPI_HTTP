@@ -1,5 +1,6 @@
 // https://wheretheiss.at/w/developer
 //http://open-notify.org/Open-Notify-API/ISS-Location-Now/
+//https://www.syncfusion.com/faq/blazor/general/how-can-i-add-google-maps-to-a-blazor-application
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

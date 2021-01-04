@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldBlazorAPI_HTTP", "HelloWorldBlazorAPI_HTTP\HelloWorldBlazorAPI_HTTP.csproj", "{A729A048-74D2-41A0-B8C8-A56772E45994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldBlazorAPI_HTTP", "HelloWorldBlazorAPI_HTTP\HelloWorldBlazorAPI_HTTP.csproj", "{A729A048-74D2-41A0-B8C8-A56772E45994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
